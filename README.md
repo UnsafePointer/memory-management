@@ -1,3 +1,3 @@
-# cmake-cpp-template
+# Memory Management
 
-Template repository for creating a C++ Visual Studio Code project built with CMake
+Playground to familiarize myself with all the memory management types in C++
