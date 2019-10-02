@@ -1,6 +1,8 @@
-#include <iostream>
+#include "Emulator.hpp"
 
 int main(int argc, char *argv[]) {
-    std::cout << "Hello, world!" << std::endl;
+    Emulator *emulator = new Emulator();
+    emulator->emulateFrame();
+    delete emulator;
     return 0;
 }
