@@ -1,8 +1,8 @@
 #include "Emulator.hpp"
 
 int main(int argc, char *argv[]) {
-    Emulator *emulator = new Emulator();
+    Emulator *emulator = Emulator::getInstance();
     emulator->emulateFrame();
-    delete emulator;
+    Emulator::removeInstance();
     return 0;
 }

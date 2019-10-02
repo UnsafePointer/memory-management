@@ -1,10 +1,13 @@
 #pragma once
 
 class Emulator {
+    static Emulator *instance;
 
-public:
     Emulator();
     ~Emulator();
+public:
+    static Emulator* getInstance();
+    static void removeInstance();
 
     void emulateFrame();
 };
