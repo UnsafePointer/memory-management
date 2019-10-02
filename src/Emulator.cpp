@@ -3,9 +3,11 @@
 
 Emulator::Emulator() {
     std::cout << "Emulator()" << std::endl;
+    cpu = new CPU();
 }
 
 Emulator::~Emulator() {
+    delete cpu;
     std::cout << "~Emulator()" << std::endl;
 }
 
@@ -24,4 +26,5 @@ void Emulator::removeInstance() {
 
 void Emulator::emulateFrame() {
     std::cout << "emulateFrame()" << std::endl;
+    cpu->executeNextInstruction();
 }
