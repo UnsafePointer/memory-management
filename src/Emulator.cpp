@@ -2,13 +2,13 @@
 #include <iostream>
 
 Emulator::Emulator() {
-
+    std::cout << "Emulator()" << std::endl;
 }
 
 Emulator::~Emulator() {
-
+    std::cout << "~Emulator()" << std::endl;
 }
 
 void Emulator::emulateFrame() {
-    std::cout << "emulate frame called" << std::endl;
+    std::cout << "emulateFrame()" << std::endl;
 }
