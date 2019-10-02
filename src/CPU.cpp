@@ -1,7 +1,7 @@
 #include "CPU.hpp"
 #include <iostream>
 
-CPU::CPU() {
+CPU::CPU(RAM *ram) : ram(ram) {
     std::cout << "CPU()" << std::endl;
 }
 
@@ -11,4 +11,5 @@ CPU::~CPU() {
 
 void CPU::executeNextInstruction() {
     std::cout << "executeNextInstruction()" << std::endl;
+    ram->loadFromMemory();
 }

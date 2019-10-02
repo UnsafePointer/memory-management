@@ -1,9 +1,10 @@
 #pragma once
+#include "RAM.hpp"
 
 class CPU {
-
+    RAM *ram;
 public:
-    CPU();
+    CPU(RAM *ram);
     ~CPU();
 
     void executeNextInstruction();

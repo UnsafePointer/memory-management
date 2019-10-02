@@ -3,10 +3,12 @@
 
 Emulator::Emulator() {
     std::cout << "Emulator()" << std::endl;
-    cpu = new CPU();
+    ram = new RAM();
+    cpu = new CPU(ram);
 }
 
 Emulator::~Emulator() {
+    delete ram;
     delete cpu;
     std::cout << "~Emulator()" << std::endl;
 }
